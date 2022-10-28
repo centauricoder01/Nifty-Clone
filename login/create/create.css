@@ -1,0 +1,94 @@
+.workspace {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.image {
+  text-align: center;
+  margin: 40px 0;
+}
+#logo {
+  width: 100px;
+}
+.box {
+  width: 40%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  /* height: 65vh; */
+}
+.box > div:nth-child(1) {
+  display: flex;
+  padding: 15px 15px 15px 40px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(239, 230, 230);
+}
+.box > div:nth-child(2) {
+  padding: 40px;
+}
+.box > div:nth-child(2) > p {
+  line-height: 24px;
+}
+.box > div:nth-child(1) > div {
+  padding: 3px;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  cursor: pointer;
+}
+.box > div:nth-child(1) > div:hover {
+  background-color: #f98a3f;
+  box-shadow: none;
+  color: white;
+}
+.box > div:nth-child(1) img {
+  width: 100%;
+  font-weight: 500;
+}
+form {
+  margin-top: 20px;
+  color: rgb(128, 124, 124);
+}
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 9px 0 18px 0;
+  border: 1px solid rgb(201, 197, 197);
+  font-size: 16px;
+}
+form > div {
+  display: flex;
+}
+form > div > input {
+  width: 75%;
+  border-right: none;
+}
+form > div:nth-child(7) button {
+  border-left: none;
+  width: 25%;
+  font-size: 16px;
+  height: 100%;
+  margin-top: 9px;
+  padding: 15px;
+  /* background-color: #fff; */
+  border: 1px solid gainsboro;
+}
+form > div:nth-child(8) {
+  display: flex;
+  justify-content: flex-end;
+}
+form > div:nth-child(8) button {
+  width: 45%;
+  font-size: 16px;
+  height: 100%;
+  margin-top: 9px;
+  padding: 15px;
+  background-color: rgb(24, 157, 157);
+  color: white;
+  font-weight: 500;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  cursor: pointer;
+}

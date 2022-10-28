@@ -1,0 +1,113 @@
+#main {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.head,
+.head1 {
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.head h1 {
+  font-size: 65px;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.divs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  margin: auto;
+}
+
+.boxInnerr h4,
+.boxInnerb h4 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.boxInnerr p,
+.boxInnerb p {
+  font-size: 15px;
+}
+
+.boxInnerr img,
+.boxInnerb img {
+  padding-top: 5px;
+}
+
+.boxInnerr,
+.boxInnerb {
+  padding: -200px;
+  border: 1px solid #e8e8e8;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.boxInnerr {
+  background: rgb(249, 241, 242);
+}
+
+.boxInnerb {
+  background: rgb(244, 255, 244);
+}
+
+.btn {
+  background-color: #00baab;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.head1 P:last-child {
+  font-size: 16px;
+}
+
+.head1 > h2 + p {
+  color: #6c729c;
+  font-size: 22px;
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .divs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  .boxInnerr h4,
+  .boxInnerb h4 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .boxInnerr p,
+  .boxInnerb p {
+    font-size: 15px;
+  }
+  .head + img {
+    width: auto;
+  }
+  .head,
+  .head1 {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .head h1 {
+    font-size: 30px;
+  }
+  #main {
+    margin: auto;
+  }
+}

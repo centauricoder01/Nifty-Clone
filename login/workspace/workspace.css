@@ -1,0 +1,67 @@
+.workspace {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.image {
+  text-align: center;
+  margin: 40px 0;
+}
+#logo {
+  width: 100px;
+}
+.box {
+  width: 60%;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  height: 75vh;
+  padding: 45px;
+}
+.box > div {
+  display: flex;
+  justify-content: center;
+}
+.box > div:nth-child(1) {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 23px;
+}
+.box > div:nth-child(2) {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.box > div:nth-child(3) {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(246, 243, 243);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.box > div:nth-child(3):hover {
+  background-color: rgb(238, 232, 223);
+}
+.box > div:nth-child(4) {
+  margin-bottom: 7px;
+}
+.box > div:nth-child(3) > div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+}
+.box > div:nth-child(3) > div img {
+  width: 60%;
+  height: 50%;
+}

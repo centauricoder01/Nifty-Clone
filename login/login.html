@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login">
+      <div class="image">
+        <img
+          id="logo"
+          src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <div class="child-1">
+          <span>COMING SOON</span>
+          <span>Reporting Dashboard</span>
+          <p>
+            Powerful reporting to keep you on top of your business and workload.
+            Customize your dashboard to gain insights and make informed
+            decisions.
+          </p>
+          <img
+            src="https://nifty.pm/static/media/main.9818dcc508e7ef1f7d96.png"
+            alt=""
+          />
+        </div>
+        <div class="child-2">
+          <h2>Log in to your account</h2>
+          <form>
+            <label for="email">Email Address*</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="name@company.com"
+            /><br />
+            <div>
+              <label for="password">Password*</label
+              ><label for="">Forgot Password?</label>
+            </div>
+            <input type="password" id="password" placeholder="Password" /><br />
+            <button id="loginBtn" onclick="loginUser()">Log in</button>
+          </form>
+          <div>
+            <img
+              src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+              alt=""
+            />
+            <span onclick="signUp()"> Sign in with Google</span>
+          </div>
+          <div>Sign in wth SSO</div>
+          <div>or</div>
+          <div>Don't have an account?</div>
+          <div>
+            <button class="signup" onclick="signUp()">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="login.js"></script>

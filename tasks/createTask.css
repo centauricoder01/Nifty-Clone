@@ -1,0 +1,361 @@
+body {
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #111631;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  height: 45px;
+  z-index: 99;
+}
+.navbar > div {
+  display: flex;
+  width: 33%;
+  color: white;
+}
+.workspace {
+  padding: 4px 7px;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+}
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+.user > p {
+  font-size: 19px;
+}
+.navbar input {
+  width: 95%;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 17px;
+  border: none;
+  font-weight: 400;
+}
+.navbar button {
+  padding: 4px 13px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+#create {
+  background-color: #00baab;
+  margin-right: 15px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#trial {
+  background-color: #363c5b;
+  color: white;
+  font-weight: 400;
+  word-spacing: 1px;
+}
+.navbar > div:nth-child(3) {
+  justify-content: flex-end;
+}
+.box {
+  display: flex;
+}
+.sidebar {
+  width: 17%;
+  height: calc(100vh - 45px);
+  background-color: #363c5b;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 45px;
+  padding: 10px 20px;
+}
+.sidebar > div {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+.sidebar > div > div {
+  display: flex;
+  padding: 7px;
+  align-items: center;
+  color: white;
+  margin-bottom: 7px;
+  border-radius: 10px;
+}
+.sidebar > div > div:hover {
+  background-color: rgba(225, 225, 225, 0.1);
+}
+.sidebar > div > div > img {
+  width: 22px;
+  margin-right: 10px;
+}
+.sidebar > div > div > p:hover {
+  cursor: pointer;
+}
+.details {
+  margin-left: 17%;
+  width: 83%;
+  overflow-y: scroll;
+  /* margin-left: 17%; */
+}
+.active {
+  background-color: rgba(225, 225, 225, 0.1);
+}
+#extras {
+  margin-top: 30px;
+  padding: 7px;
+  color: white;
+}
+#extras > h4 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 6px 0;
+  color: black;
+  border-radius: 7px;
+  padding-left: 15px;
+  background-color: rgba(225, 225, 225, 0.2);
+  border-left: 5px solid rgb(199, 189, 189);
+}
+.nav-2 {
+  margin-top: 45px;
+  width: 100%;
+  padding: 15px 30px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+}
+.nav-2 > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  width: 65%;
+}
+.nav-2 > div > img {
+  width: 25px;
+  margin-right: 15px;
+}
+.nav-2 > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  gap: 30px;
+}
+.nav-2 > div:nth-child(2) > input {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: rgba(0.2, 0, 0, 0.16) 0px 1px 4px;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.container {
+  display: flex;
+  padding: 50px 150px;
+  justify-content: space-between;
+}
+.project-container {
+  width: 100%;
+  padding: 30px 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* height: 500px; */
+}
+.project-container > input {
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.radio {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+textarea {
+  margin-top: 20px;
+  font-size: 20px;
+  width: 400px;
+}
+.container > .project-container > #desc {
+  width: 100%;
+}
+.project-container > button {
+  background-color: #00baab;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.visible {
+  display: none;
+}
+.task-container {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.task-container > h1 {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(207, 204, 204);
+  background-color: #e2e2e2;
+}
+form {
+  width: 50%;
+  margin: 40px auto;
+  background-color: rgb(207, 204, 204);
+  padding: 25px;
+  border-radius: 7px;
+}
+form input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(193, 192, 192);
+  border-radius: 5px;
+  margin: 7px 0 15px 0;
+}
+#create-task {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #00baab;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#logOut {
+  padding: 0%;
+}
+#logOut > div {
+  margin-top: 20px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 7px;
+}
+#logOut > div > p {
+  color: #00baab;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+@media (max-width: 720px) and (min-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  .navbar > div {
+    display: flex;
+    width: 30%;
+    color: white;
+  }
+  .navbar input {
+    display: none;
+  }
+  .navbar .workspace-name {
+    display: none;
+  }
+  .navbar .workspace {
+    padding: 8px 10px;
+  }
+  .navbar #create {
+    font-size: 12px;
+  }
+  .sidebar a {
+    display: none;
+  }
+  .sidebar #extras h4 {
+    display: none;
+  }
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar > div {
+    border-bottom: none;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .project-container {
+    width: 100%;
+    padding: 15px;
+  }
+  .container > .project-container > input {
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .container > .project-container > h3 {
+    font-size: 10px;
+  }
+  .container > .project-container > select {
+    font-size: 10px;
+  }
+  .container > .project-container > #desc {
+    width: 100%;
+  }
+  .project-container > button {
+    font-size: 10px;
+  }
+  .nav-2 img,
+  p {
+    display: none;
+  }
+  .container > .task-container > h1 {
+    font-size: 10px;
+  }
+  .container > .task-container > form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 7px;
+  }
+  .container > .task-container > form > label {
+    font-size: 10px;
+  }
+  .container > .task-container > form > select {
+    font-size: 10px;
+  }
+  .container > .task-container > form > #create-task {
+    font-size: 13px;
+  }
+  .container > .task-container > form > input {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="/commonStyles/common.css"
+    />
+    <link rel="stylesheet" href="at.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <div class="user">
+          <div class="workspace"></div>
+          <p class="workspace-name"></p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <input type="search" placeholder="Search anything..." />
+      </div>
+      <div>
+        <a href="createTask.html"><button id="create">+ Create</button></a>
+        <a href="/pricing/pricing.html"
+          ><button id="trial">14 days of trial left</button></a
+        >
+      </div>
+    </div>
+    <div class="box">
+      <div class="sidebar">
+        <div>
+          <div>
+            <img
+              src="https://www.freeiconspng.com/thumbs/compass-icon/compass-icon-27.png"
+              alt=""
+            />
+            <a href="overview.html">Overview</a>
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png"
+              alt=""
+            />
+            <a href="createTask.html">Create +</a>
+          </div>
+          <div class="active">
+            <img
+              src="https://static.thenounproject.com/png/1252505-200.png"
+              alt=""
+            />
+            <a href="allTask.html">All tasks</a>
+          </div>
+          <div>
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
+              alt=""
+            />
+            <a href="projectTask.html">Projects</a>
+          </div>
+        </div>
+        <div id="extras">
+          <h4>FAVORITES</h4>
+          <h4>PORTFOLIOS</h4>
+          <h4>DIRECT MESSAGES</h4>
+        </div>
+        <a href="/Index.html">
+          <div id="logOut">
+            <div>
+              <p>Sign Out</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="details">
+        <div class="nav-2">
+          <div>
+            <img
+              src="https://static.thenounproject.com/png/1252505-200.png"
+              alt=""
+            />
+            <p>All tasks</p>
+          </div>
+        </div>
+        <div class="nav-3">
+          <div>
+            <select id="sort-project" onchange="filterStatus()">
+              <option value="">Filter by status</option>
+              <option value="To do">To do</option>
+              <option value="In progress">In progress</option>
+              <option value="Almost done">Almost done</option>
+            </select>
+            <select id="sort-task" onchange="sort()">
+              <option value="">Sort by name</option>
+              <option value="ascending">A-Z</option>
+              <option value="descending">Z-A</option>
+            </select>
+            <input type="date" onchange="filterDate()" id="datetime" />
+            <input
+              type="submit"
+              value="Show Completed"
+              class="comp"
+              onclick="showCompletedTasks()"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="projects">
+            <div>
+              <p>Project Name</p>
+              <p>status</p>
+              <p>Due Date</p>
+              <p>Mark as Completed</p>
+            </div>
+            <div class="task-container"></div>
+          </div>
+          <div class="completed visible">
+            <div>
+              <p>Project Name</p>
+              <p>Date</p>
+              <p>Status</p>
+            </div>
+            <div class="completed-container">
+              <div class="completed-detail">
+                <div>Name</div>
+                <div>Date</div>
+                <div>complete</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let data = JSON.parse(localStorage.getItem("tasks"));
+  display(data);
+  function display(data) {
+    function showTask() {
+      document.querySelector(".task-container").innerHTML = "";
+      data.forEach((elem, index) => {
+        let div = document.createElement("div");
+        div.classList.add("task-detail");
+        let div2 = document.createElement("div");
+        let button = document.createElement("button");
+        button.classList.add("mark");
+        button.addEventListener("click", () => {
+          remove(elem, index);
+        });
+        button.innerText = "Mark Complete";
+        div2.append(button);
+        div.innerHTML = `
+    
+      <div><p>${elem.name}</p></div>
+<div><p class="status">${elem.status}</p></div>
+<div> <p class="date">${elem.date}</p></div>
+      `;
+        div.append(div2);
+        document.querySelector(".task-container").append(div);
+      });
+    }
+    showTask();
+  }
+
+  let completedData = JSON.parse(localStorage.getItem("completedTask")) || [];
+  function remove(elem, index) {
+    completedData.push(elem);
+    localStorage.setItem("completedTask", JSON.stringify(completedData));
+    data.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(data));
+    display(data);
+  }
+  function filterStatus() {
+    let selected = document.getElementById("sort-project").value;
+    if (selected == "") {
+      display(data);
+    } else {
+      let status = data.filter((elem) => {
+        return elem.status == selected;
+      });
+      display(status);
+    }
+  }
+  function sort() {
+    // let data = JSON.parse(localStorage.getItem("tasks"));
+    let selec = document.getElementById("sort-task").value;
+    console.log(selected);
+    if (selec == "ascending") {
+      data.sort(function (a, b) {
+        return a.description - b.description;
+      });
+      display(data);
+    }
+    if (selec == "descending") {
+      data.sort(function (a, b) {
+        return b.description - a.description;
+      });
+      display(data);
+    }
+    display(data);
+  }
+  function filterDate() {
+    let value = document.getElementById("datetime").value;
+    if (value == "") {
+      display(data);
+    } else {
+      let date = data.filter((elem) => {
+        return elem.date == value;
+      });
+      display(data);
+    }
+  }
+  function showCompletedTasks() {
+    if (document.querySelector(".comp").value == "Show Completed") {
+      document.querySelector(".projects").classList.add("visible");
+      document.querySelector(".completed").classList.remove("visible");
+      document.querySelector(".comp").value = "Show all Tasks";
+      let completed = JSON.parse(localStorage.getItem("completedTask"));
+
+      showCompleted();
+
+      function showCompleted() {
+        document.querySelector(".completed-container").innerHTML = "";
+        completed.forEach((elem, index) => {
+          let div = document.createElement("div");
+          div.classList.add("completed-detail");
+          div.innerHTML = `
+    
+      <div><p>${elem.name}</p></div>
+<div> <p class="date">${elem.date}</p></div>
+<div><p class="status">Completed</p></div>
+      `;
+
+          document.querySelector(".completed-container").append(div);
+        });
+      }
+    } else {
+      document.querySelector(".projects").classList.remove("visible");
+      document.querySelector(".completed").classList.add("visible");
+      document.querySelector(".comp").value = "Show Completed";
+      display(data);
+    }
+  }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
+</script>

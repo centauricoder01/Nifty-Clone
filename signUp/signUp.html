@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="signUp.css" />
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="create.css" />
+  </head>
+  <body>
+    <div class="workspace">
+      <div class="image">
+        <img
+          id="logo"
+          src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <div>
+          <h2>Get started in less than one minute.</h2>
+          <div onclick="window.history.go(-1); return false;">
+            <img
+              src="https://static.thenounproject.com/png/1202535-200.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="child-2">
+          <form>
+            <label for="email">Email Address*</label><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="name@company.com"
+            /><br />
+            <div>
+              <label for="password">Password*</label>
+            </div>
+            <input type="password" id="password" placeholder="Password" /><br />
+            <button id="loginBtn" onclick="signUp()">signUp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="signUp.js"></script>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="overview.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <div class="user">
+          <div class="workspace">M</div>
+          <p class="workspace-name">masai</p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <input type="search" placeholder="Search anything..." />
+      </div>
+      <div>
+        <a href="createTask.html"><button id="create">+ Create</button></a>
+        <a href="/pricing/pricing.html"
+          ><button id="trial">14 days of trial left</button></a
+        >
+      </div>
+    </div>
+    <div class="box">
+      <div class="sidebar">
+        <div>
+          <div class="active">
+            <img
+              src="https://www.freeiconspng.com/thumbs/compass-icon/compass-icon-27.png"
+              alt=""
+            />
+            <a href="overview.html">Overview</a>
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png"
+              alt=""
+            />
+
+            <a href="createTask.html">Create +</a>
+          </div>
+          <div>
+            <img
+              src="https://static.thenounproject.com/png/1252505-200.png"
+              alt=""
+            />
+
+            <a href="allTask.html">All tasks</a>
+          </div>
+          <div>
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
+              alt=""
+            />
+            <a href="projectTask.html">Projects</a>
+          </div>
+        </div>
+        <div id="extras">
+          <h4>FAVORITES</h4>
+          <h4>PORTFOLIOS</h4>
+          <h4>DIRECT MESSAGES</h4>
+        </div>
+        <a href="/Index.html">
+          <div id="logOut">
+            <div>
+              <p>Sign Out</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="details">
+        <div class="nav-2">
+          <div>
+            <img
+              src="https://www.freeiconspng.com/thumbs/compass-icon/compass-icon-27.png"
+              alt=""
+            />
+            <p>Overview</p>
+          </div>
+          <div class="sorting">
+            <select id="sort-project">
+              <option value="">Sort Projects</option>
+              <option value="ascending">A-Z</option>
+              <option value="descending">Z-A</option>
+            </select>
+            <select id="sort-task">
+              <option value="">Sort Tasks</option>
+              <option value="ascending">A-Z</option>
+              <option value="descending">Z-A</option>
+            </select>
+          </div>
+        </div>
+        <div class="container">
+          <div class="projects">
+            <div>
+              <h2>Projects</h2>
+            </div>
+            <div class="project-list"></div>
+          </div>
+          <div class="projects">
+            <div>
+              <h2>Tasks</h2>
+            </div>
+            <div class="project-list-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let data = JSON.parse(localStorage.getItem("projects")) || [];
+  function display(data) {
+    document.querySelector(".project-list").innerHTML = "";
+    data.forEach(function (elem, index) {
+      let div = document.createElement("div");
+      div.classList.add("project-details");
+      let div2 = document.createElement("div");
+      let btn = document.createElement("button");
+      btn.innerText = "Delete";
+      btn.addEventListener("click", (elem, index) => {
+        removeProject(elem, index);
+      });
+      div2.append(btn);
+      div.innerHTML = `
+      <div><p>${elem.name}</p></div>
+       <div><p>${elem.privacy}</p></div>
+      `;
+      div.append(div2);
+      document.querySelector(".project-list").append(div);
+    });
+  }
+  display(data);
+  function removeProject(elem, index) {
+    data.splice(index, 1);
+    localStorage.setItem("projects", JSON.stringify(data));
+    display(data);
+  }
+  let task = JSON.parse(localStorage.getItem("tasks")) || [];
+  function displayTask(task) {
+    document.querySelector(".project-list-2").innerHTML = "";
+    task.forEach(function (elem, index) {
+      let div = document.createElement("div");
+      div.classList.add("project-details");
+      let div2 = document.createElement("div");
+      let btn = document.createElement("button");
+      btn.innerText = "Delete";
+      btn.addEventListener("click", (elem, index) => {
+        removeTask(elem, index);
+      });
+      div2.append(btn);
+      div.innerHTML = `
+      <div><p>${elem.name}</p></div>
+       <div><p>${elem.status}</p></div>
+
+      `;
+      div.append(div2);
+      document.querySelector(".project-list-2").append(div);
+    });
+  }
+  displayTask(task);
+  function removeTask(elem, index) {
+    task.splice(index, 1);
+    localStorage.setItem("tasks", JSON.stringify(task));
+    displayTask(task);
+  }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
+</script>

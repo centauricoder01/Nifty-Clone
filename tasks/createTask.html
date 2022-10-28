@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="createTask.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <div class="user">
+          <div class="workspace">M</div>
+          <p class="workspace-name"></p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <input type="search" placeholder="Search anything..." />
+      </div>
+      <div>
+        <a href="#"><button id="create">+ Create</button></a>
+        <a href="/pricing/pricing.html">
+          <button id="trial">14 days of trial left</button></a
+        >
+      </div>
+    </div>
+    <div class="box">
+      <div class="sidebar">
+        <div>
+          <div>
+            <img
+              src="https://www.freeiconspng.com/thumbs/compass-icon/compass-icon-27.png"
+              alt=""
+            />
+            <a href="overview.html">Overview</a>
+          </div>
+          <div class="active">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png"
+              alt=""
+            />
+            <a href="createTask.html">Create +</a>
+          </div>
+          <div>
+            <img
+              src="https://static.thenounproject.com/png/1252505-200.png"
+              alt=""
+            />
+            <a href="allTask.html">All tasks</a>
+            <p></p>
+          </div>
+          <div>
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
+              alt=""
+            />
+            <a href="projectTask.html">Projects</a>
+          </div>
+        </div>
+        <div id="extras">
+          <h4>FAVORITES</h4>
+          <h4>PORTFOLIOS</h4>
+          <h4>DIRECT MESSAGES</h4>
+        </div>
+        <a href="/Index.html">
+          <div id="logOut">
+            <div>
+              <p>Sign Out</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="details">
+        <div class="nav-2">
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png"
+              alt=""
+            />
+            <p>Create +</p>
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Create Project Task"
+              onclick="showProject()"
+            />
+            <input
+              type="submit"
+              value="Create Personal Task"
+              onclick="showTask()"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="project-container visible">
+            <input type="text" id="pName" placeholder="Enter project name..." />
+            <h3>Project Privacy</h3>
+            <select id="privacy">
+              <option value="General">General</option>
+              <option value="Public">Public</option>
+              <option value="Private">Private</option>
+            </select>
+            <h3>Description</h3>
+            <textarea id="desc" rows="4" cols="50"> </textarea><br />
+            <button onclick="saveProject()">Create Project</button>
+          </div>
+          <div class="task-container visible">
+            <h1>Add a Task</h1>
+            <form id="form">
+              <label for="name">Task name</label><br />
+              <input type="text" id="name" /><br />
+              <label for="description">Task description</label><br />
+              <input type="text" id="description" /><br />
+              <label for="status">Status</label><br />
+              <select id="status">
+                <option value="">Select</option>
+                <option value="To do">To do</option>
+                <option value="In progress">In progress</option>
+                <option value="Almost done">Almost done</option>
+              </select>
+              <br />
+              <label for="date">Due date</label><br />
+              <input type="date" id="date" /><br />
+              <input
+                type="submit"
+                value="Create Task"
+                id="create-task"
+                onclick="saveTask()"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function showProject() {
+    document.querySelector(".project-container").classList.remove("visible");
+    document.querySelector(".task-container").classList.add("visible");
+  }
+  function showTask() {
+    document.querySelector(".task-container").classList.remove("visible");
+    document.querySelector(".project-container").classList.add("visible");
+  }
+  let projectArray = JSON.parse(localStorage.getItem("projects")) || [];
+  function saveProject() {
+    let name = document.getElementById("pName").value;
+    let privacy = document.getElementById("privacy").value;
+    let description = document.getElementById("desc").value;
+    if (name == "" || privacy == "" || description == "") {
+      alert("Please fill the details first");
+    } else {
+      let projectObj = {
+        name,
+        privacy,
+        description,
+      };
+      projectArray.push(projectObj);
+      localStorage.setItem("projects", JSON.stringify(projectArray));
+      alert("Project Created");
+    }
+    document.getElementById("pName").value = "";
+    document.getElementById("privacy").value = "";
+    document.getElementById("desc").value = "";
+  }
+  let taskArray = JSON.parse(localStorage.getItem("tasks")) || [];
+  function saveTask() {
+    event.preventDefault();
+    let name = document.getElementById("name").value;
+    let description = document.getElementById("description").value;
+    let status = document.getElementById("status").value;
+    let date = document.getElementById("date").value;
+    if (name == "" || description == "" || status == "" || date == "") {
+      alert("Please fill the details first");
+    } else {
+      let taskObj = {
+        name,
+        description,
+        status,
+        date,
+      };
+      taskArray.push(taskObj);
+      localStorage.setItem("tasks", JSON.stringify(taskArray));
+      alert("Task Created");
+    }
+    document.getElementById("name").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("status").value = "";
+    document.getElementById("date").value = "";
+  }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
+</script>

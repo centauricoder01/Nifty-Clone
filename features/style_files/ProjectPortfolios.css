@@ -1,0 +1,623 @@
+.firstpart {
+  background: linear-gradient(180deg, #f2f6fb, #fdf9f9);
+  padding: 7rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  justify-self: center;
+  align-items: center;
+}
+
+#discussion {
+  width: 29%;
+  text-align: center;
+  margin: auto;
+  background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
+  border-radius: 15px;
+  color: white;
+  padding: 5px;
+}
+
+.firstpart h1 {
+  margin: auto;
+  margin-top: 1rem;
+  font-weight: bolder;
+  font-size: 40px;
+  width: 31rem;
+}
+
+.second_P {
+  line-height: 1.6;
+  width: 37rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input_button {
+  position: relative;
+  margin: 1rem;
+}
+
+.input_button input {
+  width: 30rem;
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 20px;
+  border-radius: 7px;
+  /* background-color: rgba(185, 185, 185, 0.468); */
+  border: none;
+  color: #6c729c;
+  transition: 0.15s;
+  background-color: rgba(185, 198, 217, 0.2);
+  border: 1px solid transparent;
+}
+
+.input_button button {
+  position: absolute;
+  right: 1rem;
+  top: 8px;
+  width: 9rem;
+  height: 2.4rem;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  background-color: #00baab;
+  border: none;
+  cursor: pointer;
+}
+
+.input_button button:hover {
+  background-color: #007b71;
+}
+
+.input_button button a {
+  text-decoration: none;
+}
+
+.twobuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_button {
+  width: 4rem;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px -2px black;
+  background-color: white;
+}
+
+.second_button img {
+  width: 2rem;
+}
+
+.last_Child {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c729c;
+  text-align: center;
+}
+
+/* BOX TWO DESIGN  */
+
+.randomChanging {
+  text-align: center;
+  background-image: linear-gradient(#ffedf8b1, #befff8c3);
+  width: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.p_tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.p_tags p:hover {
+  color: #00baab;
+  cursor: pointer;
+}
+
+#changing_data p {
+  font-size: 1.2rem;
+  width: 40rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.Second_box {
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.Second_box p {
+  color: #8b99ad;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.images img {
+  width: 7rem;
+  height: 7rem;
+  margin: 0rem 1rem;
+}
+
+/* DISCUSSION_PART */
+
+.More_discussion {
+  text-align: center;
+}
+
+.first_box {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 9rem;
+  background: linear-gradient(90deg, #5cc0f5, #8dd7ff);
+  color: white;
+  border: none;
+  font-size: 2.4rem;
+}
+
+.first_box ~ h1 {
+  font-size: 3rem;
+  width: 40rem;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.first_box ~ h1 ~ p {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+  color: #6c729c;
+}
+
+.first_img {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+  gap: 2rem;
+}
+
+.two img:nth-child(1) {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.two img:nth-child(2) {
+  position: absolute;
+  right: 4rem;
+  top: auto;
+  width: 46rem;
+  height: 20rem;
+}
+
+.one {
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 20rem;
+  line-height: 1.6;
+  margin: auto;
+}
+
+/* second img of second box  */
+.second_img {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+  gap: 2rem;
+}
+
+.three img:nth-child(1) {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.three img:nth-child(2) {
+  position: absolute;
+  right: 50rem;
+  top: auto;
+  width: auto;
+  height: 20rem;
+}
+
+.four {
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 20rem;
+  line-height: 1.6;
+  margin: auto;
+}
+
+/* third box img styling part  */
+
+.three_img {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+}
+
+.six img:nth-child(1) {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.six img:nth-child(2) {
+  position: absolute;
+  right: 20rem;
+  top: auto;
+  width: auto;
+  height: 20rem;
+}
+
+.five {
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 20rem;
+  line-height: 1.6;
+  margin: auto;
+}
+
+/* ********************************************* */
+
+.Four_img {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+  gap: 2rem;
+}
+
+.eight img:nth-child(1) {
+  position: relative;
+  width: 50rem;
+  height: 25rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.eight img:nth-child(2) {
+  position: absolute;
+  right: 50rem;
+  top: auto;
+  width: auto;
+  height: 20rem;
+}
+
+/* *********************************************** */
+
+.last_bottoms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin: 3rem;
+}
+
+#arrow_function {
+  width: 6rem;
+}
+
+#start_Free_trail {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: #00baab;
+  border: none;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 11%);
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* RESPONSIVE PART OF THE WEBSITE  */
+
+/* 768PX  TO 1024PX */
+
+@media only screen and (min-width: 601px) and (max-width: 924px) {
+  .firstpart {
+    margin: auto;
+    background: linear-gradient(180deg, #fdfeff, #fdf9f9);
+    margin-left: 5.5rem;
+  }
+
+  #discussion {
+    width: 14%;
+    font-size: 10px;
+  }
+
+  .center h1 {
+    width: 33rem;
+  }
+
+  .randomChanging {
+    width: 100%;
+    padding: 1rem;
+    margin-left: 5.5rem;
+  }
+
+  .Second_box {
+    width: 100%;
+    margin-left: 6.5rem;
+  }
+
+  .More_discussion {
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+    margin-left: 5.5rem;
+  }
+
+  .first_img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .two img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .two img:nth-child(2) {
+    right: -4rem;
+    height: 12rem;
+    width: 20rem;
+  }
+
+  .second_img {
+    width: 100%;
+    margin: auto;
+    gap: 17rem;
+    width: 53rem;
+  }
+
+  .three img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .three img:nth-child(2) {
+    right: 20rem;
+    height: 12rem;
+  }
+
+  .three_img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .six img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .six img:nth-child(2) {
+    right: -5rem;
+    height: 12rem;
+  }
+
+  .Four_img {
+    width: 100%;
+    margin: auto;
+    gap: 17rem;
+    width: 53rem;
+  }
+
+  .eight img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .eight img:nth-child(2) {
+    right: 20rem;
+    height: 12rem;
+  }
+
+  .last_bottoms {
+    font-size: 1rem;
+    margin-left: 17.5rem;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE DIVIES  */
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .twobuttons {
+    display: block;
+  }
+
+  .firstpart {
+    background: none;
+    margin-left: -4rem;
+  }
+
+  .second_button {
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  .last_Child {
+    font-size: 20px;
+  }
+
+  #discussion {
+    width: 30%;
+    font-size: 20px;
+  }
+
+  .firstpart h1 {
+    width: 32rem;
+  }
+
+  .second_P {
+    font-size: 2rem;
+    width: 40rem;
+  }
+
+  /* inputs bar of the website  */
+
+  .input_button {
+    position: relative;
+    margin: 1rem;
+  }
+
+  .input_button input {
+    width: 42rem;
+    height: 4.5rem;
+    font-size: 34px;
+  }
+
+  .input_button button {
+    right: 1rem;
+    top: 8px;
+    width: 9rem;
+    height: 3.4rem;
+  }
+
+  .input_button button:hover {
+    background-color: #007b71;
+  }
+
+  .input_button button a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* END OF INPUT TAG  */
+
+  .randomChanging {
+    width: 168%;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+  }
+
+  .four {
+    margin-left: 2rem;
+  }
+
+  .p_tags {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-top: -3px;
+  }
+
+  #changing_data p {
+    width: 26rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  .Second_box {
+    width: 100%;
+    margin-left: 9.5rem;
+  }
+
+  .More_discussion {
+    text-align: center;
+    width: 160%;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+  }
+
+  .first_box ~ h1 ~ p {
+    font-size: 1.5rem;
+  }
+
+  .first_img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .two img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .two img:nth-child(2) {
+    right: -22rem;
+    height: 12rem;
+  }
+
+  .second_img {
+    width: 120%;
+    margin: auto;
+  }
+
+  .three img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .three img:nth-child(2) {
+    right: 2rem;
+    height: 9rem;
+    width: 15rem;
+  }
+
+  .three_img {
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .six img:nth-child(1) {
+    width: 25%;
+    height: 15rem;
+  }
+
+  .six img:nth-child(2) {
+    right: -5rem;
+    height: 12rem;
+  }
+  .last_bottoms {
+    width: 40rem;
+    /* border: 2px solid red; */
+  }
+}

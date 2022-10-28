@@ -1,0 +1,111 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.image {
+  text-align: center;
+  margin: 40px 0;
+}
+#logo {
+  width: 100px;
+}
+.box {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.box > div {
+  width: 50%;
+  padding: 30px;
+}
+.child-1 {
+  background-color: #fcf9f7;
+}
+.child-2 {
+  background-color: #ffffff;
+}
+.child-1 > span:nth-child(1) {
+  background-image: linear-gradient(90deg, #fab35c, #f98a3f);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 9%),
+    inset 0 2px 3px 0 hsl(0deg 0% 100% / 15%);
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
+  margin: -4px 4px 0 0;
+  padding: 2px 6px;
+}
+.child-1 > span:nth-child(2) {
+  font-weight: 500;
+  font-size: 17px;
+}
+.child-1 > p {
+  margin: 15px 0 25px 0;
+  line-height: 22px;
+  color: rgb(51, 49, 49);
+}
+.child-1 > img {
+  width: 100%;
+}
+.child-2 > form {
+  color: #8e94bb;
+  margin-top: 20px;
+}
+.child-2 > form > div {
+  color: #8e94bb;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 100%;
+  color: #2f2f2f;
+  font-size: 15px;
+  font-weight: 400;
+  height: 46px;
+  padding: 0 15px;
+  border: 0;
+  border: 1px solid #8e94bb;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+#loginBtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(131, 217, 193);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.child-2 img {
+  width: 20px;
+}
+.child-2 > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.child-2 > div > span {
+  color: #f98a3f;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.signup {
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(245, 240, 240);
+  border: none;
+  border-radius: 5px;
+  color: #f98a3f;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}

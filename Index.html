@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg"
+    />
+    <link rel="stylesheet" href="./commonStyles/navbar.css" />
+    <link rel="stylesheet" href="./commonStyles/footer.css" />
+    <link rel="stylesheet" href="./commonStyles/common.css" />
+
+    <title>Nifty : Project Management</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- HERE NAVBAR WILL BE INCLUDED  -->
+    <div id="navbar"></div>
+    <!-- MAIN PART OF THE WEBSITE -->
+    <div class="first_box">
+      <div id="play_Video">
+        <div class="notmovingimg">
+          <img
+            src="./images/videos_image.webp"
+            alt="videos_image"
+            id="video_img"
+          />
+        </div>
+        <button id="play">
+          <img
+            src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-play-user-interface-kmg-design-flat-kmg-design.png"
+          />
+        </button>
+      </div>
+      <div id="video_trailer">
+        <iframe
+          width="831"
+          height="467"
+          src="https://www.youtube.com/embed/5GaV5EZX22o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <img
+          src="./images/cross.png"
+          alt="cross"
+          class="cross"
+          id="cross_arrow"
+        />
+      </div>
+
+      <div id="heading_img">
+        <h1>
+          The ultimate project management
+          <img src="/images/osimage.webp" alt="osimage" />
+        </h1>
+      </div>
+      <p id="Nifty_spacing">
+        Stop switching between Roadmaps, Tasks, Docs, Chats, & other tools.<br />
+        Nifty is one app to unite teams, goals, and actions in one place.
+      </p>
+      <div class="input_button">
+        <input
+          type="text"
+          name="signup"
+          id="input_signup"
+          placeholder="name@company.com"
+          required
+        />
+        <button id="get_started">
+          <a href="/signUp/signUp.html">Get Started</a>
+        </button>
+      </div>
+      <hr />
+      <a href="/signUp/signUp.html">
+        <button id="google_signup">
+          <img src="/images/Google Logo.png" alt="Google" />
+          <p>Sign Up with Google</p>
+        </button>
+      </a>
+      <p id="Free_forever">Free forever. No credit card required.</p>
+    </div>
+    <div class="Second_box">
+      <p>JOIN OVER 20,000 HIGHLY PRODUCTIVE TEAMS</p>
+      <div class="images">
+        <img
+          src="https://niftypm.com/_nuxt/img/logo-verizon.b7c8a9c.svg"
+          alt=""
+        />
+        <img src="https://niftypm.com/_nuxt/img/logo-pd.e35bded.svg" alt="" />
+        <img
+          src="https://niftypm.com/_nuxt/img/logo-emovis.895c86e.svg"
+          alt=""
+        />
+        <img
+          src="https://niftypm.com/_nuxt/img/logo-vmware.b3363fd.svg"
+          alt=""
+        />
+        <img
+          src="https://smart3rdparty.com/wp-content/uploads/2017/09/ibm_gray1.png"
+          alt=""
+        />
+        <img
+          src="https://niftypm.com/_nuxt/img/logo-loreal.8cc4fed.svg"
+          alt=""
+        />
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiNhY2JhZDAiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg=="
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="section__divider">
+      <p>SAY GOODBYE TO STATUS MEETINGS</p>
+    </div>
+
+    <!-- random changing part of the website  -->
+
+    <div class="randomChanging">
+      <div class="p_tags">
+        <p class="Para_tag">Roadmaps ....</p>
+        <p class="Para_tag">Tasks ....</p>
+        <p class="Para_tag">Discussions ....</p>
+        <p class="Para_tag">Docs ....</p>
+        <p class="Para_tag">Reporting</p>
+      </div>
+      <div id="changing_data">
+        <h1>Set Goals & Timelines</h1>
+        <p>
+          Set a visual timeline for your big-picture goals and build team
+          alignment by automating progress as tasks are completed
+        </p>
+        <img
+          src="https://niftypm.com/_nuxt/img/large@1x.3b50ea1.webp"
+          alt="first_img"
+        />
+      </div>
+    </div>
+
+    <!-- #SECOND RANDOM CHANGING BLOCK  -->
+
+    <div class="section__divider">
+      <p>BUILT FOR EVERY TEAM</p>
+    </div>
+
+    <div class="randomChanging_part_2">
+      <div class="p_tags_part_2">
+        <p class="Para_tag_part_2">Engineering ....</p>
+        <p class="Para_tag_part_2">Sales ....</p>
+        <p class="Para_tag_part_2">Marketing ....</p>
+        <p class="Para_tag_part_2">Product ....</p>
+        <p class="Para_tag_part_2">Client Management ....</p>
+        <p class="Para_tag_part_2">IT</p>
+      </div>
+      <div id="changing_data_part_2">
+        <div id="first_Box">
+          <h1>Engineering</h1>
+          <p>
+            Let go of fragmented tools. Plan, track, and manage your workflows
+            with award-winning ease — in one collaborative workspace.
+          </p>
+          <p>✅ Real-time progress reporting with Milestones</p>
+          <p>✅ Custom development workflows with if/then rules</p>
+          <p>✅ Manage issues, bugs, and changes directly in one place</p>
+        </div>
+        <div id="second_Box">
+          <img
+            src="https://niftypm.com/_nuxt/img/large@1x.c481d6e.webp"
+            alt="first"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="GettingStartedAgain">
+      <button>
+        <a href="/signUp/signUp.html">Get Started </a>
+      </button>
+    </div>
+
+    <div id="lastBox">
+      <img
+        src="/images/doubleQuotes.png"
+        alt="doubleQuotes"
+        id="double_quotes"
+      />
+      <h1>
+        Nifty is by far the best productivity tool I've ever used.<br />
+        They have consolidated so many tools down to one for my team, without
+        compromising the experience.
+      </h1>
+      <p>RIM N. KAY</p>
+      <p>ENGINEERING LEAD, EMOVIS</p>
+    </div>
+    <div id="Footer_part"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
+<script type="module">
+  import navbar from "./commonStyles/navbar.js";
+  import footer from "./commonStyles/footer.js";
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>

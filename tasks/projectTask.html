@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="projectTask.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div>
+        <div class="user">
+          <div class="workspace"></div>
+          <p class="workspace-name"></p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <input type="search" placeholder="Search anything..." />
+      </div>
+      <div>
+        <a href="createTask.html"><button id="create">+ Create</button></a>
+        <a href="/pricing/pricing.html"
+          ><button id="trial">14 days of trial left</button></a
+        >
+      </div>
+    </div>
+    <div class="box">
+      <div class="sidebar">
+        <div>
+          <div>
+            <img
+              src="https://www.freeiconspng.com/thumbs/compass-icon/compass-icon-27.png"
+              alt=""
+            />
+            <a href="overview.html">Overview</a>
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3658/3658773.png"
+              alt=""
+            />
+
+            <a href="createTask.html">Create +</a>
+          </div>
+          <div>
+            <img
+              src="https://static.thenounproject.com/png/1252505-200.png"
+              alt=""
+            />
+
+            <a href="allTask.html">All tasks</a>
+          </div>
+          <div class="active">
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
+              alt=""
+            />
+            <a href="projectTask.html">Projects</a>
+          </div>
+        </div>
+        <div id="extras">
+          <h4>FAVORITES</h4>
+          <h4>PORTFOLIOS</h4>
+          <h4>DIRECT MESSAGES</h4>
+        </div>
+        <a href="/Index.html">
+          <div id="logOut">
+            <div>
+              <p>Sign Out</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="details">
+        <div class="nav-2">
+          <div>
+            <img
+              src="https://uxwing.com/wp-content/themes/uxwing/download/business-professional-services/project-management-timeline-icon.png"
+              alt=""
+            />
+            <p>Projects</p>
+          </div>
+        </div>
+        <div class="nav-3">
+          <div>
+            <select id="sort-project" onchange="filterPrivacy()">
+              <option value="">filter by privacy</option>
+              <option value="General">General</option>
+              <option value="Public">Public</option>
+              <option value="Private">Private</option>
+            </select>
+            <select id="sort-task" onchange="sortProject()">
+              <option value="">sort by name</option>
+              <option value="a">A-Z</option>
+              <option value="d">Z-A</option>
+            </select>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search Projects...."
+            />
+          </div>
+        </div>
+        <div class="container">
+          <svg
+            class="icon"
+            width="2em"
+            height="4em"
+            viewBox="0 0 31 36"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              id="Style-guide"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g
+                id="nifty-UI-guide"
+                transform="translate(-900.000000, -3111.000000)"
+                fill="currentColor"
+                fill-rule="nonzero"
+              >
+                <g
+                  id="Group-6-Copy"
+                  transform="translate(852.000000, 3068.000000)"
+                >
+                  <path
+                    d="M63.2,79 C60.7316918,79 58.7294118,76.9829826 58.7294118,74.5 C58.7294118,74.0029437 58.3291017,73.6 57.8352941,73.6 C57.3414866,73.6 56.9411765,74.0029437 56.9411765,74.5 C56.9411765,76.984547 54.9373421,79 52.4705882,79 C50.0022801,79 48,76.9829826 48,74.5 L48,58.3029664 C48,49.8509274 54.8040841,43 63.2,43 C71.5946379,43 78.4,49.8518332 78.4,58.3029664 L78.4,74.5 C78.4,76.9852814 76.3984495,79 73.9294118,79 C71.4603741,79 69.4588235,76.9852814 69.4588235,74.5 C69.4588235,74.0029437 69.0585134,73.6 68.5647059,73.6 C68.0708983,73.6 67.6705882,74.0029437 67.6705882,74.5 C67.6705882,76.984547 65.6667539,79 63.2,79 Z M57.6615385,70.25 C60.210545,70.25 62.2769231,72.320683 62.2769231,74.875 C62.2769231,75.3841431 62.6915935,75.8 63.2,75.8 C63.7080846,75.8 64.1230769,75.3844657 64.1230769,74.875 C64.1230769,72.320683 66.189455,70.25 68.7384615,70.25 C71.2874681,70.25 73.3538462,72.320683 73.3538462,74.875 C73.3538462,75.3858634 73.7671218,75.8 74.2769231,75.8 C74.7867244,75.8 75.2,75.3858634 75.2,74.875 L75.2,58.2280488 C75.2,51.5854101 69.8271188,46.2 63.2,46.2 C56.5716078,46.2 51.2,51.5844331 51.2,58.2280488 L51.2,74.875 C51.2,75.3841431 51.6146704,75.8 52.1230769,75.8 C52.6311616,75.8 53.0461538,75.3844657 53.0461538,74.875 C53.0461538,72.320683 55.1125319,70.25 57.6615385,70.25 Z M61.2,60.6 C59.6536027,60.6 58.4,59.3463973 58.4,57.8 C58.4,56.2536027 59.6536027,55 61.2,55 C62.7463973,55 64,56.2536027 64,57.8 C64,59.3463973 62.7463973,60.6 61.2,60.6 Z M70.8,60.6 C69.2536027,60.6 68,59.3463973 68,57.8 C68,56.2536027 69.2536027,55 70.8,55 C72.3463973,55 73.6,56.2536027 73.6,57.8 C73.6,59.3463973 72.3463973,60.6 70.8,60.6 Z"
+                    id="Combined-Shape"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <p class="ptag">
+            There are no open tasks for the selected projects. Configure
+            projects by clicking on the filter icon or add a new task.
+          </p>
+        </div>
+
+        <div class="project-container visible">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  showImg();
+  function showImg() {
+    let data = JSON.parse(localStorage.getItem("projects"));
+    if (data.length == 0) {
+      document.querySelector(".project-container").classList.add("visible");
+      document.querySelector(".container").classList.remove("visible");
+    } else {
+      document.querySelector(".project-container").classList.remove("visible");
+      document.querySelector(".container").classList.add("visible");
+    }
+  }
+  let data = JSON.parse(localStorage.getItem("projects"));
+  display(data);
+  function display(data) {
+    function showTask() {
+      document.querySelector(".project-container").innerHTML = "";
+      data.forEach((elem, index) => {
+        let div = document.createElement("div");
+        div.classList.add("project-details");
+        let div2 = document.createElement("div");
+        let p = document.createElement("p");
+        p.innerText = `${elem.privacy}`;
+        let button = document.createElement("button");
+        button.addEventListener("click", () => {
+          remove(elem, index);
+        });
+        button.innerText = "Mark Complete";
+        div2.append(p);
+        div2.append(button);
+        div.innerHTML = `
+
+        <h3>${elem.name}</h3>
+            <p>
+              ${elem.description}
+            </p>
+        `;
+        div.append(div2);
+        document.querySelector(".project-container").append(div);
+      });
+    }
+    showTask();
+  }
+  function filterPrivacy() {
+    let selected = document.getElementById("sort-project").value;
+    if (selected == "") {
+      display(data);
+    } else {
+      let status = data.filter((elem) => {
+        return elem.privacy == selected;
+      });
+      display(status);
+    }
+  }
+  function remove(elem, index) {
+    data.splice(index, 1);
+    localStorage.setItem("projects", JSON.stringify(data));
+    display(data);
+  }
+  function workspace() {
+    let name = JSON.parse(localStorage.getItem("workspace"));
+    console.log(name.name);
+    document.querySelector(".workspace").innerText = name.name[0].toUpperCase();
+    document.querySelector(".workspace-name").innerText = name.name;
+  }
+  workspace();
+  function sortProject() {
+    let select = document.getElementById("sort-task").value;
+    let data = JSON.parse(localStorage.getItem("projects"));
+    console.log(select);
+    if (select == "a") {
+      data.sort((a, b) => {
+        console.log(a, b);
+        return a.name.toUpperCase() - b.name.toUpperCase();
+      });
+    } else {
+      console.log("not sorted");
+    }
+    display(data);
+  }
+</script>

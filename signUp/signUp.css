@@ -1,0 +1,75 @@
+.workspace {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.image {
+  text-align: center;
+  margin: 40px 0;
+}
+#logo {
+  width: 100px;
+}
+.box {
+  width: 40%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+}
+.box > div:nth-child(1) {
+  display: flex;
+  padding: 15px 15px 15px 40px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(239, 230, 230);
+}
+.box > div:nth-child(2) {
+  padding: 40px;
+}
+.box > div:nth-child(1) > div {
+  padding: 3px;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  cursor: pointer;
+}
+.box > div:nth-child(1) > div:hover {
+  background-color: #f98a3f;
+  box-shadow: none;
+  color: white;
+}
+.box > div:nth-child(1) img {
+  width: 100%;
+  font-weight: 500;
+}
+.child-2 > form {
+  color: #8e94bb;
+}
+.child-2 > form > div {
+  color: #8e94bb;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 100%;
+  color: #2f2f2f;
+  font-size: 15px;
+  font-weight: 400;
+  height: 46px;
+  padding: 0 15px;
+  border: 0;
+  border: 1px solid #8e94bb;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+#loginBtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(131, 217, 193);
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}

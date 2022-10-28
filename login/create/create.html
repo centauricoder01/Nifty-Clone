@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>workspace</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="create.css" />
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="create.css" />
+  </head>
+  <body>
+    <div class="workspace">
+      <div class="image">
+        <img
+          id="logo"
+          src="https://nifty.pm/static/media/nifty-logo.622c3309bcffc8b8f40273706462925f.svg"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <div>
+          <h2>Create a new workspace</h2>
+          <div onclick="goBack()">
+            <img
+              src="https://static.thenounproject.com/png/1202535-200.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <p>
+            Create a new workspace with its
+            <b>own billing plan, data, and members.</b> Use
+            <b>portfolios to separate additional teams</b> within a workspace
+            and keep them connected."
+          </p>
+          <form>
+            <label for="name">Workspace Name</label><br />
+            <input
+              type="text"
+              id="name"
+              placeholder="What's your workspace name"
+              onkeyup="input()"
+            />
+            <br />
+
+            <label for="url">Workspace URL</label><br />
+            <div>
+              <input type="text" id="url" placeholder="Workspace" />
+              <button>.niftypm.com</button>
+            </div>
+            <div>
+              <button onclick="create()">Create a new workspace</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="create.js"></script>

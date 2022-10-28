@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.first_box {
+  text-align: center;
+  margin: auto;
+}
+
+#play_Video {
+  position: relative;
+  margin: auto;
+  margin-top: 8rem;
+  width: 90%;
+}
+
+#play img {
+  width: 2rem;
+}
+
+#play_Video button {
+  position: absolute;
+  top: 3rem;
+  left: 40rem;
+  border: none;
+  background-color: white;
+  border-radius: 4rem;
+  width: 6rem;
+  height: 6rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 14px -8px black;
+  margin: auto;
+}
+
+#play_Video button:hover {
+  border: 1px solid rgb(255, 241, 86);
+  background-color: rgb(255, 255, 241);
+}
+
+#video_img {
+  width: 50rem;
+  padding: 11px;
+  border-radius: 1rem;
+  height: 15rem;
+  background-color: #d6d6d6;
+  /* background-image: linear-gradient(#919191, #f0f0f0); */
+  margin: 1rem;
+  margin-top: -2rem;
+}
+
+/* VIDEO TRAILER */
+
+#video_trailer {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: rgba(203, 203, 203, 0.58);
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#video_trailer iframe {
+  border-radius: 10px;
+  position: absolute;
+  outline: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+#video_trailer .cross {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 50px;
+  filter: invert(1);
+  max-width: 2rem;
+  max-height: 2rem;
+  background-color: #00f9ad;
+  z-index: 100;
+  border-radius: 4rem;
+}
+
+/* end of videos title */
+
+#heading_img {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+}
+
+#heading_img h1 {
+  font-size: 2.7rem;
+  margin: 2rem;
+}
+
+#heading_img h1 img {
+  width: 4rem;
+  height: 2rem;
+}
+
+#Nifty_spacing {
+  line-height: 1.6;
+}
+
+.input_button {
+  position: relative;
+  margin: 2rem;
+}
+
+.input_button input {
+  width: 30rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 25px;
+  border-radius: 11px;
+  background-color: rgba(185, 185, 185, 0.468);
+  border: none;
+}
+
+.input_button button {
+  position: absolute;
+  right: 31rem;
+  top: 8px;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  background-color: #00baab;
+  border: none;
+  cursor: pointer;
+}
+
+.input_button button:hover {
+  background-color: #007b71;
+}
+
+.input_button button a {
+  text-decoration: none;
+}
+
+#google_signup {
+  gap: 1rem;
+  width: 31rem;
+  height: 3.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 11px -6px black;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#google_signup img {
+  width: 1rem;
+  height: 1rem;
+}
+
+hr {
+  border: none;
+  width: 32rem;
+  border-bottom: 1px solid wheat;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+#Free_forever {
+  margin-top: 2rem;
+}
+
+.first_box {
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+/* BOX TWO DESIGN PART  */
+
+.Second_box {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.Second_box p {
+  color: #8b99ad;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images img {
+  width: 7rem;
+  height: 7rem;
+  margin: 0rem 1rem;
+}
+
+.section__divider {
+  width: 31rem;
+  height: 3rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.section__divider p {
+  color: #6d7d96;
+}
+
+/* random changing part of the website  */
+
+.randomChanging {
+  text-align: center;
+  background-image: linear-gradient(#ffc5e7b1, #cefffac3);
+  width: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.p_tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.p_tags p:hover {
+  color: #00baab;
+  cursor: pointer;
+}
+
+#changing_data p {
+  font-size: 1.2rem;
+  width: 40rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+img {
+  width: 90%;
+  border-radius: 1rem;
+}
+
+/* ramdon changing part 2 */
+
+.randomChanging_part_2 {
+  text-align: center;
+  background-image: linear-gradient(#ffffffb1, #aefff7c3);
+  width: 80%;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.p_tags_part_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.p_tags_part_2 p:hover {
+  color: #00baab;
+  cursor: pointer;
+}
+
+#changing_data_part_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#first_Box {
+  width: 30rem;
+  text-align: left;
+  margin-left: 2rem;
+  line-height: 1.9;
+}
+
+/* GettingStartedAgain */
+
+.GettingStartedAgain {
+  text-align: center;
+}
+
+.GettingStartedAgain button {
+  width: 30rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: 11px;
+  border: none;
+  text-align: center;
+  box-shadow: 0px 0px 20px -8px black;
+  cursor: pointer;
+}
+
+.GettingStartedAgain button a {
+  color: rgb(39, 168, 39);
+}
+
+.GettingStartedAgain button a:hover {
+  color: rgb(123, 123, 123);
+}
+
+/* last part of the website  */
+
+#lastBox {
+  text-align: center;
+  width: 60rem;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 4rem;
+  border-radius: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.486),
+    rgb(234, 234, 234),
+    rgb(255, 255, 209),
+    rgba(148, 255, 148, 0.619),
+    rgba(120, 120, 255, 0.546),
+    rgba(213, 155, 255, 0.614),
+    rgb(255, 202, 255)
+  );
+  margin-bottom: 3rem;
+  box-shadow: 0px 0px 20px -8px black;
+}
+
+#lastBox h1 {
+  margin-top: -1rem;
+  font-family: Volkhov, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* RESPONSIVENESS OF THE WEBSITE AND DIFFERENT PART OF THE WEBSITE  */
+
+/* FOR MAX-SCREEN PART OF THE COMPUTER   ( MIN - 789PX && MAX - 1024PX )*/
+
+/* Media Query for Tablets Ipads portrait mode */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  #play_Video button {
+    left: 23rem;
+    bottom: 6rem;
+  }
+
+  #play_Video {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 8rem;
+  }
+
+  #video_img {
+    width: 55rem;
+  }
+
+  #heading_img h1 {
+    margin-left: 20rem;
+  }
+
+  .first_box {
+    text-align: center;
+    margin-left: 6rem;
+  }
+
+  #Nifty_spacing {
+    margin-left: 4rem;
+    width: 50rem;
+  }
+
+  .input_button {
+    margin-left: 12rem;
+  }
+
+  .input_button button {
+    position: relative;
+    top: -2.5rem;
+    right: -15rem;
+  }
+
+  #google_signup {
+    margin-left: 13rem;
+  }
+
+  hr {
+    margin-left: 11rem;
+  }
+
+  #Free_forever {
+    width: 57rem;
+  }
+
+  .Second_box {
+    width: 100%;
+    margin-left: 6.5rem;
+  }
+}

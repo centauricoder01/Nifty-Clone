@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apps</title>
+    <link rel="stylesheet" href="./apps.css" />
+    <link
+      rel="stylesheet"
+      href="/commonStyles/common.css"
+    />
+    <link rel="stylesheet" href="/commonStyles/footer.css">
+    <link rel="stylesheet" href="/commonStyles/navbar.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="container">
+      <div class="rc">
+        <h1>Remote collaboration, anywhere.</h1>
+        <p>
+          Take Nifty on the go and manage tasks, track progress, and collaborate
+          with your teammates from anywhere!
+        </p>
+      </div>
+
+      <div class="list-apps">
+        <div class="app">
+            <a href="https://itunes.apple.com/us/app/nifty-project-management/id1366408429?ls=1&amp;mt=8" target="_blank"">
+            <span><i class="fa-brands fa-apple"></i></span>
+            <p>DOWNLOAD FOR iOS</p></a>
+        </div>
+
+        <div class="app">
+            <a href="https://play.google.com/store/apps/details?id=com.niftypm" target="_blank">
+            <span><i class="fa-brands fa-google-play"></i></span> 
+            <p>DOWNLOAD FOR ANDROID</p></a>
+        </div>
+
+        <div class="app">
+            <a href="/apps/Nifty.dmg" target="_blank">
+            <span><i class="fa-brands fa-app-store"></i></span>
+            <p>DOWNLOAD FOR MAC</p></a>
+        </div>
+
+        <div class="app">
+            <a href="/apps/Nifty.exe" target="_blank">
+            <span><i class="fa-brands fa-windows"></i></span> 
+            <p>DOWNLOAD FOR  WINDOWS</p></a>
+        </div>
+
+        <div class="app">
+            <a href="https://chrome.google.com/webstore/detail/nifty-tasks-chat-docs-tim/hhjbhnchjifpkchbcccnkeccabelmkcm" target="_blank">
+            <span><i class="fa-brands fa-chrome"></i></span> 
+            <p>INSTALL CHROME EXTENSION</p></a>
+        </div>
+        
+      </div>
+      <div class="img">
+        <img src="https://niftypm.com/_nuxt/img/large@1x.5de3bf7.webp" alt="">
+      </div>
+      
+    </div>
+    <div id="Footer_part"></div>
+  </body>
+</html>
+<script src="./apps.js"></script>
+<script type="module">
+  import footer from "/commonStyles/footer.js"
+  import navbar from "/commonStyles/navbar.js"
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>

@@ -1,0 +1,247 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: #fdfdfe;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+}
+nav > div {
+  position: relative;
+  display: flex;
+  width: 85%;
+  align-items: center;
+  padding: 5px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.nifty {
+  width: 15%;
+}
+.log {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elements {
+  padding: 8px 0;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 500;
+  align-items: center;
+}
+.elements > div {
+  position: relative;
+}
+.elements > div > p {
+  padding: 0 15px;
+  border-radius: 4px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.elements > div > a {
+  padding: 0 15px;
+  border-radius: 4px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.elements > div > a {
+  padding: 0 15px;
+}
+.demo {
+  text-decoration: none;
+  border-radius: 4px;
+  line-height: 36px;
+  cursor: pointer;
+  color: #00baab;
+}
+.elements > div > p:hover {
+  color: #00baab;
+}
+.demo:hover {
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.logo {
+  margin-top: 5px;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+}
+.login {
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 11%);
+  color: #020202;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 7px 15px;
+  font-weight: 500;
+  margin-right: 15px;
+  height: 35px;
+}
+.signup {
+  background: #00baab;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 19%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 7px 18px;
+  font-weight: 500;
+  height: 35px;
+}
+.signup a {
+  color: white;
+}
+.dropdown {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 35px rgb(0 0 0 / 20%);
+  color: #020202;
+  visibility: hidden;
+  position: absolute;
+}
+.dropdown > div:nth-child(1) {
+  color: #df9100;
+  width: 100%;
+  max-width: 150%;
+  line-height: 25px;
+}
+.dropdown > div:nth-child(2) {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+}
+.dropdown a:hover {
+  color: #00baab;
+}
+.elements > div:hover .dropdown {
+  visibility: visible;
+  position: absolute;
+}
+.navbar i {
+  color: #000;
+}
+.menu-img {
+  width: 23px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 1160px) {
+  .menu-img {
+    display: block;
+  }
+
+  .navbar > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .signup {
+    height: 30px;
+  }
+  .login {
+    height: 30px;
+  }
+  .log {
+    width: 30%;
+  }
+  .elements {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    padding-left: 10px;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(250, 245, 245);
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease;
+  }
+  #check:checked ~ .elements {
+    left: 0;
+  }
+  .elements > div {
+    display: flex;
+  }
+  .elements > div > p {
+    width: 20%;
+  }
+  .elements > div > div {
+    width: 50%;
+  }
+
+  .dropdown {
+    margin-top: -25px;
+  }
+  .elements > div > p:hover .dropdown {
+    visibility: visible;
+    position: absolute;
+  }
+  .elements > div .element-item:hover .dropdown {
+    visibility: visible;
+    position: absolute;
+  }
+}
+@media (max-width: 780px) {
+  .log {
+    display: none;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: -30px;
+    margin-left: 40px;
+  }
+  .dropdown > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .element-item {
+    font-size: 12px;
+  }
+  .elements > div > p {
+    width: 30%;
+  }
+  .logo {
+    width: 60px;
+  }
+  .elements > div > div {
+    width: 70%;
+  }
+}
+@media (max-width: 380px) {
+  .dropdown {
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 50px;
+  }
+  .dropdown > div:nth-child(2) {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}

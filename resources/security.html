@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security</title>
+    <link rel="stylesheet" href="/commonStyles/common.css" />
+    <link rel="stylesheet" href="./security.css" />
+    <link rel="stylesheet" href="/commonStyles/footer.css" />
+    <link rel="stylesheet" href="/commonStyles/navbar.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="container">
+      <h1>Nifty Security</h1>
+
+      <div class="section__entry">
+        <p>
+          End-to-end security is our top priority at Nifty, which is why we take
+          every precaution to defend your data while maintaining a
+          high-performance environment.
+        </p>
+        <h4>COMPLIANCE</h4>
+        <p>
+          Nifty is compliant with the
+          <strong>General Data Protection Regulation (GDPR)</strong> and
+          leverages the privacy features built into
+          <strong>Amazon Web Services (AWS)</strong> to ensure a secure
+          environment. For the technical specifications of AWS, you can read
+          more at:
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://aws.amazon.com/security"
+              target="_blank"
+              rel="noopener"
+              >https://aws.amazon.com/security</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://aws.amazon.com/compliance"
+              target="_blank"
+              rel="noopener"
+              >https://aws.amazon.com/compliance</a
+            >
+          </li>
+        </ul>
+        <h4>NETWORK + DATA SECURITY</h4>
+        <p>
+          We're provided with reports, certifications, and third party
+          assessments of Amazon's data center that ensures round-the-clock
+          airtight security, which means the same team who can get a package to
+          your door overnight is the team who are watching your servers every
+          minute.
+        </p>
+        <h4>APPLICATION SECURITY</h4>
+        <p>Nifty's platform is secured and protected in the following ways:</p>
+        <ul>
+          <li>
+            Communications are encrypted over SSL which is unable to be viewed
+            by a third party. This is financial-institute level security.
+          </li>
+          <li>
+            Nifty maintains ongoing Level 1 PCI compliance which is top-level
+            credit card storage and processing standards.
+          </li>
+          <li>
+            Nifty actively monitors ongoing security, performance and
+            availability 24/7/365. We run automated security testing on an
+            ongoing basis, as well as contract third parties for penetration
+            testing.
+          </li>
+          <li>
+            We have daily backups stored on separate servers to maintain data
+            security and viability.
+          </li>
+          <li>We offer Single-Sign-On security as an on-boarding option.</li>
+        </ul>
+        <h4>QUESTIONS</h4>
+        <p>
+          Nifty is located at 315 W 36th St, New York, NY 10018. If you wish to
+          contact us or have any questions about Security, please contact us at
+          <a href="mailto:team@niftypm.com" target="_blank" rel="noopener"
+            >team@niftypm.com</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="img"></div>
+    <div id="Footer_part"></div>
+  </body>
+</html>
+
+<script type="module">
+  import footer from "/commonStyles/footer.js";
+  import navbar from "/commonStyles/navbar.js";
+  document.getElementById("navbar").innerHTML = navbar();
+  document.getElementById("Footer_part").innerHTML = footer();
+</script>
