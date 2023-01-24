@@ -77,32 +77,26 @@ Nifty-Clone is a web Application that Help you Manage Task and Your Team. It's a
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/103047446/214360600-795faebd-aafb-4a3e-a30d-c29e3c90fb1a.png" alt="women" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955126-2874a5c1-8655-40ab-b9ce-67275139e70e.jpeg" alt="kids" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955114-1090036d-2e73-46fa-8aca-8ef9ffab1724.jpeg" alt="description" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955117-edff5eaf-7507-4580-b3b8-3aea6c089840.jpeg" alt="descriptionDark" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955106-867749b1-4838-40dc-b184-145f10d1eec2.jpeg" alt="cart" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955107-f93e13a0-6c50-46e8-a5f3-09d15421e97b.jpeg" alt="checkout" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955137-828f89b2-648e-4a68-885a-fa3f3f29b55c.png" alt="razorpay" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955133-96792a4b-7e70-4e1e-a5cf-999da70a9c95.jpeg" alt="orders" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214362151-c8a56f2c-e9ce-4fde-8910-d4143f95399b.png" alt="kids" /></td>
   </tr>
 </table>
-
-
-
-
 <br />
-
 
 ## Getting Started
 
-This project was built using HTML, CSS, JavaScript, Rest API. It is an web application Which Help you manage Your Task.
+This project was built using HTML, CSS, JavaScript, Rest API. It is a simple web application that help your to manage your task.
+
+
+If you want to contact me, you can reach me through below handles.
+
+[![linkedin](https://img.shields.io/badge/Rajendra_Patel-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rajendra01/)
+[![GitHub](https://img.shields.io/badge/Rajendra_Patel-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/centauricoder01)
+
+© 2022 Rajendra Patel
+
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+
