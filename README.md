@@ -68,10 +68,6 @@ Nifty-Clone is a web Application that Help you Manage Task and Your Team. It's a
 
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/103047446/214232960-7b41239d-3974-42ab-9923-a6aaedc28f4c.png" alt="home" /></td>
-    <td><img src="https://user-images.githubusercontent.com/103047446/214233034-3cdc7d1c-bbba-4faf-9d3c-2d7c9340a1a8.png" alt="coupons" /></td>
-  </tr>
-  <tr>
     <td><img src="https://user-images.githubusercontent.com/103047446/214233107-e629edfa-6d92-4feb-9fce-54f06c2483d5.png" alt="signup" /></td>
     <td><img src="https://user-images.githubusercontent.com/103047446/214233214-7b3be5f0-3c3d-4e78-bc14-1ebc264805a4.png" alt="login" /></td>
   </tr>
@@ -83,152 +79,10 @@ Nifty-Clone is a web Application that Help you Manage Task and Your Team. It's a
 
 <br />
 
-## Test Coupon Codes
-```
-NIKE5 (for 5% Off)
-
-NIKE10 (for 10% Off)
-
-NIKE15 (for 15% Off)
-
-NIKE20 (for 15% Off)
-
-NIKE25 (for 25% Off)
-
-NIKE30 (for 30% Off)
-```
-
-## Razorpay test payment Cards
-
-[Click here to use the razorpay testing payment methods](https://razorpay.com/docs/payments/payments/test-card-upi-details/)
-
-
-<br />
-
-
-<h2>Demo</h2>
-
-[Click here to see the presentation video of this project](https://www.linkedin.com/posts/m-sehrawat_reactjs-nike-nikecareers-activity-6947552300534042624-me2_?utm_source=linkedin_share&utm_medium=member_desktop_web)
-
-
-<br />
-
 
 ## Getting Started
 
-This project was built using React, Redux, Chakra UI, HTML, CSS, JavaScript, Rest API, Node JS, Express and MongoDB with JWT and RazorPay integration. It is an e-commerce web application and for running on your local environment you should follow these guidelines.
-
-
-### Prerequisites
-
-- NPM
-- Node JS
-- MongoDB
-
-### Setup
-
-
-The project repository can be found in [GitHub link](https://github.com/m-sehrawat/Nike-Clone) or just clone the project using this command.
-
-
-```
-Using HTTPS
-
-# git clone https://github.com/m-sehrawat/Nike-Clone.git
-```
-
-+ Open terminal on your workspace with
-
-```
-cd /home/workspace/Nike-Clone
-```
-
-
-## Install
-
-Install NPM
-
-Check that you have node and npm installed
-
-To check if you have Node.js installed, run this command in your terminal:
-
-
-```
-node -v
-```
-
-To confirm that you have npm installed you can run this command in your terminal:
-
-
-```
-npm -v
-```
-
-To confirm that you have MongoDB installed you can run this command in your terminal:
-
-
-```
-mongo -v
-```
-
-
-To install all the dependences of the project, run the following command:
-
-
-```
-cd client
-
-npm install
-
-cd ../
-
-cd server
-
-npm install
-```
-
-
-To run the application got to the client folder and run the following command:
-
-```
-npm start
-```
-
-### Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file in server folder
-
-`JWT_ACCESS_KEY`
-
-`MONGO_PATH`
-
-`RAZORPAY_KEY_ID`
-
-`RAZORPAY_KEY_SECRET`
-
-
-
-### Tools used on this project
-
-- Visual Studio Code
-- Vite-JS template
-- MongoDB compass
-- Razorpay Dashboard to monitor payments
-
-<br />
-
-
-
-## Contact
-
-If you want to contact me, you can reach me through below handles.
-
-[![linkedin](https://img.shields.io/badge/Mohit_Sehrawat-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/m-sehrawat/)
-[![GitHub](https://img.shields.io/badge/Mohit_Sehrawat-20232A?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/m-sehrawat/)
-
-© 2022 Mohit Sehrawat
-
-
+This project was built using HTML, CSS, JavaScript, Rest API. It is an web application Which Help you manage Your Task.
 
 ## Show your support
 
