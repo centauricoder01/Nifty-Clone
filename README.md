@@ -37,8 +37,7 @@
 
 
 Nifty-Clone is a web Application that Help you Manage Task and Your Team. It's a best tool for Remote working People..
-![cover](https://user-images.githubusercontent.com/91532881/175955112-da88c18c-ac5e-455a-9ac5-047c7db4f894.png)
-
+![Screenshot 2023-01-24 120933](https://user-images.githubusercontent.com/103047446/214232169-e33fd05a-4688-4d73-913c-b07c7f469a2c.png)
 <br />
 
 ## Screens ( All screens are responsive along with Dark Mode)
