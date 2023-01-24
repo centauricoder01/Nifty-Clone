@@ -40,70 +40,44 @@ Nifty-Clone is a web Application that Help you Manage Task and Your Team. It's a
 ![Screenshot 2023-01-24 120933](https://user-images.githubusercontent.com/103047446/214232169-e33fd05a-4688-4d73-913c-b07c7f469a2c.png)
 <br />
 
-## Screens ( All screens are responsive along with Dark Mode)
+## Screens
 - Homepage / Landing Page
-- Product Listing Page with Filters
+- Pricing Page
+- Work Space page
+- create workspace and Edit page.
 - Product Description Page
-- Cart Management Page
-- Wishlist/Favourites Management Page
-- Checkout with Address Management Page
 - Login / Logout Page
 - Signup Page
-- Order Summary Page
 
 
 <br />
 
 
 ## 🚀 Features
-- Login and Signup User Account
-- JWT (Json Web Token) Authentication and BcryptJS Password Hashing 
-- Product Filters Based on Price, Category, Size, Color and Gender
-- Product Sorting Based on Price, Rating and Name
-- Product Filtering and Sorting works together 
-- My Orders Section for details of all ordered item
-- Wishlist Add and Remove Items
-- Cart Add and Remove Items 
-- Cart Update Quantities 
-- Address Management
-- Order Summary
-- Coupons provided for discount
-- Razorpay Payment Gateway
-- Darkmode available
+- Login to Your Account
+- Create a seperate Work space.
+- Edit your Work Assigned work.
+- share your work with others
 
 <br />
 
-## Glimpses of Nike-Clone 🙈 :
+## Glimpses of NIFTY-CLONE 🙈 :
+
+
 
 
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955122-200a6ccb-54a5-4f39-9bc2-cd3ba3a4d102.jpeg" alt="home" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955109-b51e3e81-4cd8-4f00-a8cd-873c82882a15.png" alt="coupons" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214232960-7b41239d-3974-42ab-9923-a6aaedc28f4c.png" alt="home" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214233034-3cdc7d1c-bbba-4faf-9d3c-2d7c9340a1a8.png" alt="coupons" /></td>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955141-44aefea0-a9ee-4c3a-93e0-094ca9214e54.jpeg" alt="signup" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955129-e5392377-e72a-4868-883f-5a244fc9bc87.jpeg" alt="login" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214233107-e629edfa-6d92-4feb-9fce-54f06c2483d5.png" alt="signup" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214233214-7b3be5f0-3c3d-4e78-bc14-1ebc264805a4.png" alt="login" /></td>
   </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955097-9fe2e5a5-b4f4-4c1f-beb7-4080186e5a17.jpeg" alt="allProducts" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175957017-3530fe22-46ae-4bf7-a645-55f7a5f25ed9.jpeg" alt="men" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955142-dd33e21a-49a9-4aeb-89e7-edb3e871828f.jpeg" alt="women" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955126-2874a5c1-8655-40ab-b9ce-67275139e70e.jpeg" alt="kids" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955114-1090036d-2e73-46fa-8aca-8ef9ffab1724.jpeg" alt="description" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955117-edff5eaf-7507-4580-b3b8-3aea6c089840.jpeg" alt="descriptionDark" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955106-867749b1-4838-40dc-b184-145f10d1eec2.jpeg" alt="cart" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955107-f93e13a0-6c50-46e8-a5f3-09d15421e97b.jpeg" alt="checkout" /></td>
-  </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955137-828f89b2-648e-4a68-885a-fa3f3f29b55c.png" alt="razorpay" /></td>
-    <td><img src="https://user-images.githubusercontent.com/91532881/175955133-96792a4b-7e70-4e1e-a5cf-999da70a9c95.jpeg" alt="orders" /></td>
+
+    <td><img src="https://user-images.githubusercontent.com/103047446/214233315-96c4fe18-f70e-4cf8-b33c-61617216e29b.png" alt="allProducts" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214233396-ab297723-37f6-4989-a4b4-44f707719dab.png" alt="men" /></td>
   </tr>
 </table>
 
