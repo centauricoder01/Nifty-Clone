@@ -62,20 +62,39 @@ Nifty-Clone is a web Application that Help you Manage Task and Your Team. It's a
 <br />
 
 ## Glimpses of NIFTY-CLONE 🙈 :
-
-
-
-
 <table>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/103047446/214233107-e629edfa-6d92-4feb-9fce-54f06c2483d5.png" alt="signup" /></td>
+     <td><img src="https://user-images.githubusercontent.com/103047446/214233107-e629edfa-6d92-4feb-9fce-54f06c2483d5.png" alt="signup" /></td>
     <td><img src="https://user-images.githubusercontent.com/103047446/214233214-7b3be5f0-3c3d-4e78-bc14-1ebc264805a4.png" alt="login" /></td>
   </tr>
-
+  <tr>
     <td><img src="https://user-images.githubusercontent.com/103047446/214233315-96c4fe18-f70e-4cf8-b33c-61617216e29b.png" alt="allProducts" /></td>
     <td><img src="https://user-images.githubusercontent.com/103047446/214233396-ab297723-37f6-4989-a4b4-44f707719dab.png" alt="men" /></td>
   </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214360298-2a2d588a-12a0-426e-aa8c-8eb98123967f.png" alt="allProducts" /></td>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214360613-5365daee-6679-43ad-bd86-54374c1f296c.png" alt="men" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/103047446/214360600-795faebd-aafb-4a3e-a30d-c29e3c90fb1a.png" alt="women" /></td>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955126-2874a5c1-8655-40ab-b9ce-67275139e70e.jpeg" alt="kids" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955114-1090036d-2e73-46fa-8aca-8ef9ffab1724.jpeg" alt="description" /></td>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955117-edff5eaf-7507-4580-b3b8-3aea6c089840.jpeg" alt="descriptionDark" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955106-867749b1-4838-40dc-b184-145f10d1eec2.jpeg" alt="cart" /></td>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955107-f93e13a0-6c50-46e8-a5f3-09d15421e97b.jpeg" alt="checkout" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955137-828f89b2-648e-4a68-885a-fa3f3f29b55c.png" alt="razorpay" /></td>
+    <td><img src="https://user-images.githubusercontent.com/91532881/175955133-96792a4b-7e70-4e1e-a5cf-999da70a9c95.jpeg" alt="orders" /></td>
+  </tr>
 </table>
+
+
+
 
 <br />
 
